@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}{{ _("Sobre mí") }} | Santiago Castañón Moreschi{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sobre_mi.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<main class="about-page">
+
+<section class="about-hero">
+    <span class="about-label">{{ _("SOBRE MÍ") }}</span>
+
+    <h1>
+        {{ _("Desarrollo aplicaciones.") }}<br>
+        {{ _("También construyo todo lo que hay detrás.") }}
+    </h1>
+
+    <p class="about-intro">
+        {{ _("Soy Santiago Castañón Moreschi, desarrollador web y creador de soluciones digitales.") }}
+    </p>
+</section>
+
+
+<section class="about-content">
+
+    <div class="about-section">
+        <h2>{{ _("Quién soy") }}</h2>
+
+        <div class="about-text">
+            <p>
+                {{ _("Me interesa entender cómo funcionan las cosas de principio a fin. No solo desarrollar una aplicación, sino conocer todo lo que hay detrás: desde el diseño y la experiencia de usuario hasta el backend, las bases de datos, los servidores, las redes y el despliegue.") }}
+            </p>
+
+            <p>
+                {{ _("Trabajo principalmente con") }} <strong>Python y Flask</strong>,
+                {{ _("además de tecnologías como") }} <strong>Django, PostgreSQL,
+                Docker, Linux, JavaScript, HTML y CSS</strong>.
+            </p>
+
+            <p>
+                {{ _("También me ocupo de los entornos donde funcionan mis aplicaciones, configurando y manteniendo servicios, servidores y sistemas de despliegue.") }}
+            </p>
+        </div>
+    </div>
+
+
+    <div class="about-section">
+        <h2>{{ _("Proyectos reales") }}</h2>
+
+        <div class="about-text">
+            <p>
+                {{ _("He desarrollado proyectos propios completos, desde aplicaciones web y plataformas para comunidades hasta herramientas de gestión y automatización.") }}
+            </p>
+
+            <p>
+                {{ _("Algunos de estos proyectos están desplegados en servidores reales y requieren no solo desarrollar nuevas funcionalidades, sino también mantener el sistema, resolver problemas y asegurar que todo siga funcionando correctamente.") }}
+            </p>
+        </div>
+    </div>
+
+
+    <div class="about-section">
+        <h2>{{ _("Cómo trabajo") }}</h2>
+
+        <div class="about-text">
+            <p>
+                {{ _("Una parte importante de mi forma de aprender y trabajar es hacerlo de manera práctica. Muchos de mis proyectos nacen de una necesidad concreta y evolucionan a medida que aparecen nuevos problemas y necesidades.") }}
+            </p>
+
+            <p>
+                {{ _("No me interesa únicamente que una aplicación funcione en mi ordenador. Me gusta conocer todo el recorrido:") }}
+                <strong>{{ _("cómo se construye, cómo se conecta, dónde se almacena la información, cómo se despliega y qué ocurre cuando algo falla.") }}</strong>
+            </p>
+
+            <p>
+                {{ _("Mi forma de trabajar se basa en construir, probar, investigar y entender los problemas antes de buscar una solución. Prefiero soluciones claras y mantenibles frente a complicar innecesariamente un sistema.") }}
+            </p>
+        </div>
+    </div>
+
+
+    <div class="about-final">
+        <p>
+            {{ _("Para mí, desarrollar software no consiste solamente en escribir código. Consiste en") }}
+            <strong>{{ _("crear sistemas que resuelvan problemas reales") }}</strong>
+            {{ _("y que puedan mantenerse, evolucionar y seguir funcionando con el tiempo.") }}
+        </p>
+    </div>
+
+</section>
+
+
+</main>
+
+{% endblock %}

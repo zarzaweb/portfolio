@@ -1,0 +1,376 @@
+{% extends "base.html" %}
+
+{% block title %}{{ project.title }} · Santiago Castañón Moreschi{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/project.css') }}">
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/project.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+
+<main class="project-page">
+
+    <header class="project-hero">
+        <p>{{ project.category }}</p>
+
+        <h1>{{ project.title }}</h1>
+
+        <p class="project-intro">
+            {{ project.short_description }}
+        </p>
+    </header>
+
+
+    {% if project.images %}
+    <section class="project-section project-screenshots">
+
+        <div class="project-carousel">
+
+            <div class="project-slides">
+
+                {% for image in project.images %}
+                    <div class="project-slide">
+
+                        <button class="project-image-button" type="button">
+                            <img src="{{ url_for('static', filename=image) }}"
+                                 alt="{{ project.title }} · {{ _('Captura') }} {{ loop.index }}">
+                        </button>
+
+                    </div>
+                {% endfor %}
+
+            </div>
+
+            <div class="carousel-indicators">
+
+                {% for image in project.images %}
+                    <button
+                        class="carousel-indicator {% if loop.first %}active{% endif %}"
+                        type="button"
+                        aria-label="{{ _('Ir a la posición') }} {{ loop.index }}">
+                    </button>
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+    </section>
+    {% endif %}
+
+
+    <section class="project-section">
+        <h2>{{ _("El proyecto") }}</h2>
+
+        <p>
+            {{ project.description }}
+        </p>
+
+        <p>
+            {{ project.role }}
+        </p>
+    </section>
+
+
+    <section class="project-section">
+        <h2>{{ _("Arquitectura") }}</h2>
+
+        <p>
+            {{ project.architecture }}
+        </p>
+    </section>
+
+
+    {% if project.processing %}
+    <section class="project-section">
+        <h2>{{ _("Procesamiento") }}</h2>
+
+        <p>
+            {{ project.processing }}
+        </p>
+    </section>
+    {% endif %}
+
+
+    {% if project.backend or project.frontend %}
+    <section class="project-section">
+        <h2>{{ _("Desarrollo") }}</h2>
+
+        {% if project.backend %}
+        <h3>{{ _("Backend") }}</h3>
+
+        <div class="tech-list">
+            {% for technology in project.backend %}
+                <span>{{ technology }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+
+        {% if project.frontend %}
+        <h3>{{ _("Frontend") }}</h3>
+
+        <div class="tech-list">
+            {% for technology in project.frontend %}
+                <span>{{ technology }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </section>
+    {% endif %}
+
+
+    {% if project.database %}
+    <section class="project-section">
+        <h2>{{ _("Base de datos") }}</h2>
+
+        <div class="tech-list">
+            {% for technology in project.database %}
+                <span>{{ technology }}</span>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+
+    {% if project.features %}
+    <section class="project-section">
+        <h2>{{ _("Funcionalidades") }}</h2>
+
+        <ul class="project-features">
+            {% for feature in project.features %}
+                <li>{{ feature }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+
+    {% if project.geospatial %}
+    <section class="project-section">
+        <h2>{{ _("Geolocalización") }}</h2>
+
+        <p>
+            {{ project.geospatial }}
+        </p>
+    </section>
+    {% endif %}
+
+
+    {% if project.statistics %}
+    <section class="project-section">
+        <h2>{{ _("Estadísticas") }}</h2>
+
+        <p>
+            {{ project.statistics }}
+        </p>
+    </section>
+    {% endif %}
+
+
+    {% if project.users %}
+    <section class="project-section">
+        <h2>{{ _("Usuarios y autenticación") }}</h2>
+
+        <p>
+            {{ project.users }}
+        </p>
+    </section>
+    {% endif %}
+
+
+    {% if project.security %}
+    <section class="project-section">
+        <h2>{{ _("Seguridad") }}</h2>
+
+        <p>
+            {{ project.security }}
+        </p>
+    </section>
+    {% endif %}
+
+        {% if project.firewall %}
+    <section class="project-section">
+        <h2>{{ _("Firewall") }}</h2>
+
+        <p>
+            {{ project.firewall }}
+        </p>
+    </section>
+    {% endif %}
+
+
+    {% if project.fail2ban %}
+    <section class="project-section">
+        <h2>Fail2ban</h2>
+
+        <p>
+            {{ project.fail2ban }}
+        </p>
+    </section>
+    {% endif %}
+
+
+    {% if project.nginx_security %}
+    <section class="project-section">
+        <h2>{{ _("Seguridad de Nginx") }}</h2>
+
+        <p>
+            {{ project.nginx_security }}
+        </p>
+    </section>
+    {% endif %}
+
+
+    {% if project.administration %}
+    <section class="project-section">
+        <h2>{{ _("Administración") }}</h2>
+
+        <p>
+            {{ project.administration }}
+        </p>
+    </section>
+    {% endif %}
+
+{% if project.automation %}
+<section class="project-section">
+    <h2>{{ _("Automatización") }}</h2>
+
+    <p>
+        {{ project.automation }}
+    </p>
+</section>
+{% endif %}
+
+
+{% if project.backups %}
+<section class="project-section">
+    <h2>{{ _("Copias de seguridad") }}</h2>
+
+    <p>
+        {{ project.backups }}
+    </p>
+</section>
+{% endif %}
+
+
+{% if project.dynamic_ip %}
+<section class="project-section">
+    <h2>{{ _("IP dinámica y DDNS") }}</h2>
+
+    <p>
+        {{ project.dynamic_ip }}
+    </p>
+</section>
+{% endif %}
+
+    {% if project.services %}
+    <section class="project-section">
+        <h2>{{ _("Servicios") }}</h2>
+
+        <div class="tech-list">
+            {% for service in project.services %}
+                <span>{{ service }}</span>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+
+    {% if project.networking %}
+    <section class="project-section">
+        <h2>{{ _("Red y conectividad") }}</h2>
+
+        <p>
+            {{ project.networking }}
+        </p>
+    </section>
+    {% endif %}
+
+    {% if project.remote_access %}
+    <section class="project-section">
+        <h2>{{ _("Acceso remoto") }}</h2>
+
+        <p>
+            {{ project.remote_access }}
+        </p>
+    </section>
+    {% endif %}
+
+
+    {% if project.port_forwarding %}
+    <section class="project-section">
+        <h2>{{ _("Redirección de puertos") }}</h2>
+
+        <p>
+            {{ project.port_forwarding }}
+        </p>
+    </section>
+    {% endif %}
+
+
+    {% if project.infrastructure %}
+    <section class="project-section">
+        <h2>{{ _("Infraestructura") }}</h2>
+
+        <div class="tech-list">
+            {% for technology in project.infrastructure %}
+                <span>{{ technology }}</span>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+
+    {% if project.technologies %}
+    <section class="project-section">
+        <h2>{{ _("Tecnologías") }}</h2>
+
+        <div class="tech-list">
+            {% for technology in project.technologies %}
+                <span>{{ technology }}</span>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+
+    {% if project.highlights %}
+    <section class="project-section">
+        <h2>{{ _("Aspectos destacados") }}</h2>
+
+        <ul class="project-features">
+            {% for highlight in project.highlights %}
+                <li>{{ highlight }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+
+    {% if project.deployment %}
+    <section class="project-section">
+        <h2>{{ _("Despliegue") }}</h2>
+
+        <p>
+            {{ project.deployment }}
+        </p>
+    </section>
+    {% endif %}
+
+
+    <div class="image-lightbox" aria-hidden="true">
+        <button class="lightbox-close" type="button" aria-label="{{ _('Cerrar') }}">
+            ×
+        </button>
+
+        <img class="lightbox-image" src="" alt="">
+    </div>
+
+</main>
+
+{% endblock %}

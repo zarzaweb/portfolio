@@ -1,0 +1,707 @@
+# Translations template for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-10-21 14:10+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: data/projects.py:10
+msgid "Plataforma web · Escalada en bloque"
+msgstr ""
+
+#: data/projects.py:13
+msgid ""
+"Plataforma web para la gestión, consulta y comunidad de la escalada en "
+"bloque de Zarzalejo."
+msgstr ""
+
+#: data/projects.py:18
+msgid ""
+"Aplicación web desarrollada para centralizar la información sobre la "
+"escalada en bloque de Zarzalejo y ofrecer una plataforma para consultar "
+"bloques y sectores, registrar encadenamientos, participar en la comunidad"
+" y gestionar el contenido de la aplicación."
+msgstr ""
+
+#: data/projects.py:26
+msgid ""
+"Desarrollo integral del proyecto: arquitectura, backend, frontend, base "
+"de datos, mapas, funcionalidades de usuario, administración, seguridad y "
+"despliegue."
+msgstr ""
+
+#: data/projects.py:32
+msgid "Arquitectura web basada en Nginx, Gunicorn, Flask y PostgreSQL/PostGIS."
+msgstr ""
+
+#: data/projects.py:65
+msgid "Gestión de sectores y bloques"
+msgstr ""
+
+#: data/projects.py:66
+msgid "Información y localización geográfica"
+msgstr ""
+
+#: data/projects.py:67
+msgid "Mapas interactivos con Leaflet"
+msgstr ""
+
+#: data/projects.py:68
+msgid "Registro de encadenamientos"
+msgstr ""
+
+#: data/projects.py:69
+msgid "Estadísticas y rankings"
+msgstr ""
+
+#: data/projects.py:70
+msgid "Perfiles de usuario"
+msgstr ""
+
+#: data/projects.py:71
+msgid "Amistades y likes"
+msgstr ""
+
+#: data/projects.py:72
+msgid "Mensajería"
+msgstr ""
+
+#: data/projects.py:73
+msgid "Propuestas y votaciones"
+msgstr ""
+
+#: data/projects.py:74
+msgid "Galerías de imágenes"
+msgstr ""
+
+#: data/projects.py:75
+msgid "Insignias"
+msgstr ""
+
+#: data/projects.py:76 data/projects.py:217 data/projects.py:269
+msgid "Panel de administración"
+msgstr ""
+
+#: data/projects.py:80
+msgid ""
+"Uso de PostgreSQL/PostGIS para almacenar y gestionar información "
+"geográfica de sectores y bloques, integrada con mapas interactivos "
+"mediante Leaflet."
+msgstr ""
+
+#: data/projects.py:86
+msgid ""
+"Sistema de estadísticas y visualización de datos relacionados con la "
+"actividad de los usuarios y los encadenamientos."
+msgstr ""
+
+#: data/projects.py:91
+msgid ""
+"Sistema de usuarios con perfiles, autenticación, confirmación de correo "
+"electrónico, privacidad y control de acceso."
+msgstr ""
+
+#: data/projects.py:97
+msgid ""
+"Implementación de autenticación, control de acceso, protección de "
+"sesiones, confirmación de correo, limitación de peticiones y medidas de "
+"seguridad HTTP."
+msgstr ""
+
+#: data/projects.py:103
+msgid ""
+"Panel de administración para la gestión y moderación del contenido y de "
+"los usuarios de la plataforma."
+msgstr ""
+
+#: data/projects.py:108
+msgid ""
+"Aplicación desplegada en Linux mediante Nginx y Gunicorn, con "
+"PostgreSQL/PostGIS como sistema de base de datos y Redis para servicios "
+"auxiliares."
+msgstr ""
+
+#: data/projects.py:130 data/projects.py:265
+msgid "Desarrollo integral de la aplicación"
+msgstr ""
+
+#: data/projects.py:131
+msgid "Arquitectura modular con Flask"
+msgstr ""
+
+#: data/projects.py:132
+msgid "Integración de información geoespacial"
+msgstr ""
+
+#: data/projects.py:133
+msgid "Mapas interactivos"
+msgstr ""
+
+#: data/projects.py:134
+msgid "Sistema de usuarios y comunidad"
+msgstr ""
+
+#: data/projects.py:135
+msgid "Estadísticas y visualización de datos"
+msgstr ""
+
+#: data/projects.py:136
+msgid "Administración y moderación"
+msgstr ""
+
+#: data/projects.py:137 data/projects.py:272
+msgid "Despliegue en servidor Linux"
+msgstr ""
+
+#: data/projects.py:155
+msgid "Manduca Gastronomía en Movimiento"
+msgstr ""
+
+#: data/projects.py:157
+msgid "Aplicación web · Catering"
+msgstr ""
+
+#: data/projects.py:160
+msgid ""
+"Aplicación web para la presentación de servicios de catering y la gestión"
+" de solicitudes de presupuesto."
+msgstr ""
+
+#: data/projects.py:165
+msgid ""
+"Aplicación web desarrollada para Manduca Gastronomía en Movimiento, "
+"orientada a presentar sus servicios y productos y facilitar a los "
+"clientes la solicitud y gestión de presupuestos para eventos."
+msgstr ""
+
+#: data/projects.py:172
+msgid ""
+"Desarrollo integral del proyecto: arquitectura, backend, frontend, base "
+"de datos, gestión de presupuestos, administración, seguridad y "
+"despliegue."
+msgstr ""
+
+#: data/projects.py:178
+msgid ""
+"Aplicación web desarrollada con Flask y organizada mediante Blueprints, "
+"con una separación modular de las distintas áreas funcionales de la "
+"aplicación."
+msgstr ""
+
+#: data/projects.py:211
+msgid "Presentación de servicios de catering"
+msgstr ""
+
+#: data/projects.py:212
+msgid "Gestión de productos"
+msgstr ""
+
+#: data/projects.py:213
+msgid "Gestión de packs"
+msgstr ""
+
+#: data/projects.py:214
+msgid "Solicitudes de presupuesto"
+msgstr ""
+
+#: data/projects.py:215
+msgid "Seguimiento del estado de los presupuestos"
+msgstr ""
+
+#: data/projects.py:216
+msgid "Confirmación de presupuestos"
+msgstr ""
+
+#: data/projects.py:218
+msgid "Gestión de contenido"
+msgstr ""
+
+#: data/projects.py:219
+msgid "Envío de correos electrónicos"
+msgstr ""
+
+#: data/projects.py:223
+msgid ""
+"Estadísticas creadas para controlar el flujo solo para el administrador "
+"de la aplicación, incluyendo el número de solicitudes de presupuesto."
+msgstr ""
+
+#: data/projects.py:229
+msgid ""
+"Sistema de acceso y control de las funciones administrativas de la "
+"aplicación."
+msgstr ""
+
+#: data/projects.py:234
+msgid ""
+"Protección de formularios mediante CSRF, limitación de peticiones en las "
+"rutas sensibles y control de acceso a las funciones administrativas."
+msgstr ""
+
+#: data/projects.py:240
+msgid ""
+"Panel de administración para gestionar productos, packs y solicitudes de "
+"presupuesto, incluyendo el seguimiento de sus diferentes estados."
+msgstr ""
+
+#: data/projects.py:246
+msgid ""
+"Aplicación desplegada en Linux mediante Nginx y Gunicorn, gestionada como"
+" servicio mediante systemd."
+msgstr ""
+
+#: data/projects.py:266
+msgid "Arquitectura modular mediante Blueprints"
+msgstr ""
+
+#: data/projects.py:267
+msgid "Gestión de productos y packs"
+msgstr ""
+
+#: data/projects.py:268
+msgid "Flujo completo de presupuestos"
+msgstr ""
+
+#: data/projects.py:270
+msgid "Protección CSRF"
+msgstr ""
+
+#: data/projects.py:271
+msgid "Limitación de peticiones"
+msgstr ""
+
+#: data/projects.py:290
+msgid "Automatización de reclamaciones de calidad"
+msgstr ""
+
+#: data/projects.py:292
+msgid "Aplicación empresarial · Automatización y trazabilidad"
+msgstr ""
+
+#: data/projects.py:295
+msgid ""
+"Aplicación para automatizar el análisis y la trazabilidad de "
+"reclamaciones de calidad a partir de documentación PDF y Excel."
+msgstr ""
+
+#: data/projects.py:301
+msgid ""
+"Aplicación empresarial desarrollada para automatizar el procesamiento y "
+"análisis de reclamaciones de calidad. El sistema permite cargar la "
+"documentación asociada a una reclamación, incluyendo información de "
+"calidad en puerto, reclamaciones, albaranes y datos de barcos en puerto, "
+"para relacionar y cotejar la información de las distintas fuentes."
+msgstr ""
+
+#: data/projects.py:310
+msgid ""
+"Desarrollo integral del proyecto: arquitectura de la aplicación, lógica "
+"de procesamiento y automatización, frontend, gestión de usuarios, "
+"procesamiento de documentos, persistencia de resultados, estadísticas y "
+"despliegue."
+msgstr ""
+
+#: data/projects.py:317
+msgid ""
+"Arquitectura modular compuesta por una aplicación Django para la interfaz"
+" y servicios desarrollados en Python para la lógica y el procesamiento de"
+" la información, organizados y desplegados mediante Docker Compose. La "
+"configuración sensible y específica del entorno se gestiona mediante "
+"variables de entorno."
+msgstr ""
+
+#: data/projects.py:326
+msgid ""
+"El sistema recibe documentación en PDF y Excel relacionada con cada "
+"reclamación y la procesa para extraer y relacionar la información "
+"necesaria. Los datos de calidad en puerto se cotejan con la información "
+"de los barcos en puerto para establecer la trazabilidad y posteriormente "
+"se comparan con los datos de calidad indicados en la reclamación. El "
+"resultado del análisis se transforma en un informe preparado para su "
+"revisión y posterior incorporación al registro de reclamaciones."
+msgstr ""
+
+#: data/projects.py:362
+msgid "Autenticación de usuarios"
+msgstr ""
+
+#: data/projects.py:363
+msgid "Perfiles diferenciados para administradores y trabajadores"
+msgstr ""
+
+#: data/projects.py:364
+msgid "Carga de documentación PDF"
+msgstr ""
+
+#: data/projects.py:365
+msgid "Carga de archivos Excel"
+msgstr ""
+
+#: data/projects.py:366
+msgid "Procesamiento automatizado de documentación"
+msgstr ""
+
+#: data/projects.py:367
+msgid "Cotejo de información de calidad en puerto"
+msgstr ""
+
+#: data/projects.py:368
+msgid "Cotejo con información de barcos en puerto"
+msgstr ""
+
+#: data/projects.py:369 data/projects.py:432
+msgid "Trazabilidad de la mercancía"
+msgstr ""
+
+#: data/projects.py:370
+msgid "Comparación de calidad entre puerto y reclamación"
+msgstr ""
+
+#: data/projects.py:371
+msgid "Generación automatizada de informes"
+msgstr ""
+
+#: data/projects.py:372
+msgid "Almacenamiento de resultados en PostgreSQL"
+msgstr ""
+
+#: data/projects.py:373
+msgid "Registro histórico de reclamaciones procesadas"
+msgstr ""
+
+#: data/projects.py:374
+msgid "Consulta de registros"
+msgstr ""
+
+#: data/projects.py:375
+msgid "Visualización de estadísticas"
+msgstr ""
+
+#: data/projects.py:376
+msgid "Listados de reclamaciones y resultados"
+msgstr ""
+
+#: data/projects.py:377
+msgid "Preparación de resultados para su incorporación a Excel"
+msgstr ""
+
+#: data/projects.py:381
+msgid ""
+"Sistema de estadísticas basado en los registros almacenados en "
+"PostgreSQL. La aplicación consulta los resultados de las reclamaciones "
+"procesadas para generar estadísticas y mostrar información agregada sobre"
+" la actividad y los resultados obtenidos."
+msgstr ""
+
+#: data/projects.py:389
+msgid ""
+"Sistema de autenticación con diferentes perfiles de acceso para "
+"administradores y trabajadores, permitiendo adaptar las funciones "
+"disponibles según el tipo de usuario."
+msgstr ""
+
+#: data/projects.py:395
+msgid ""
+"Control de acceso mediante autenticación y gestión de permisos "
+"diferenciados para los distintos perfiles de usuario."
+msgstr ""
+
+#: data/projects.py:401
+msgid ""
+"Funciones de administración para la gestión de usuarios y el acceso a la "
+"información y funcionalidades destinadas a los administradores."
+msgstr ""
+
+#: data/projects.py:407
+msgid ""
+"Aplicación desplegada mediante Docker Compose, con los distintos "
+"componentes organizados como servicios independientes y configuración "
+"específica del entorno gestionada mediante variables de entorno."
+msgstr ""
+
+#: data/projects.py:428
+msgid "Automatización de un proceso empresarial"
+msgstr ""
+
+#: data/projects.py:429
+msgid "Arquitectura modular"
+msgstr ""
+
+#: data/projects.py:430
+msgid "Procesamiento automatizado de PDF y Excel"
+msgstr ""
+
+#: data/projects.py:431
+msgid "Cotejo de información procedente de diferentes fuentes"
+msgstr ""
+
+#: data/projects.py:433
+msgid "Comparación automatizada de datos de calidad"
+msgstr ""
+
+#: data/projects.py:434
+msgid "Generación de informes"
+msgstr ""
+
+#: data/projects.py:435
+msgid "Persistencia de resultados en PostgreSQL"
+msgstr ""
+
+#: data/projects.py:436
+msgid "Registro histórico de reclamaciones"
+msgstr ""
+
+#: data/projects.py:437
+msgid "Estadísticas basadas en datos reales del registro"
+msgstr ""
+
+#: data/projects.py:438
+msgid "Listados y consulta de resultados"
+msgstr ""
+
+#: data/projects.py:439
+msgid "Sistema de usuarios con diferentes perfiles"
+msgstr ""
+
+#: data/projects.py:440
+msgid "Despliegue mediante Docker Compose"
+msgstr ""
+
+#: data/projects.py:456
+msgid "Servidor doméstico e infraestructura"
+msgstr ""
+
+#: data/projects.py:458
+msgid "Infraestructura · Administración de sistemas"
+msgstr ""
+
+#: data/projects.py:461
+msgid ""
+"Infraestructura Linux administrada para desplegar aplicaciones web, "
+"gestionar servicios, redes, contenedores, seguridad y procesos "
+"automatizados de mantenimiento."
+msgstr ""
+
+#: data/projects.py:467
+msgid ""
+"Servidor Linux utilizado como infraestructura real para el despliegue y "
+"funcionamiento permanente de aplicaciones web y servicios. El entorno "
+"centraliza la ejecución de aplicaciones Python, servidores web, bases de "
+"datos, contenedores, servicios de red, acceso remoto, herramientas de "
+"inteligencia artificial y tareas automatizadas de mantenimiento."
+msgstr ""
+
+#: data/projects.py:476
+msgid ""
+"Administración integral de la infraestructura, incluyendo la instalación "
+"y configuración del sistema, despliegue de aplicaciones, gestión de "
+"servicios, configuración de red, seguridad, acceso remoto, contenedores, "
+"bases de datos, automatización de tareas, copias de seguridad y "
+"mantenimiento del entorno."
+msgstr ""
+
+#: data/projects.py:485
+msgid ""
+"Infraestructura basada en Debian Linux que integra Nginx como servidor "
+"web y proxy inverso, Gunicorn para ejecutar aplicaciones Python, "
+"PostgreSQL como servicio de base de datos, systemd para la gestión de "
+"servicios y Docker y Docker Compose para ejecutar aplicaciones y "
+"herramientas contenedorizadas. Las tareas periódicas de mantenimiento se "
+"automatizan mediante cron."
+msgstr ""
+
+#: data/projects.py:512
+msgid ""
+"Configuración de red local y acceso remoto mediante WireGuard. El "
+"servidor dispone de una red local privada y una red VPN independiente "
+"para el acceso remoto. Nginx actúa como punto de entrada para las "
+"aplicaciones web, mientras que los servicios internos permanecen "
+"restringidos a las redes o interfaces necesarias."
+msgstr ""
+
+#: data/projects.py:521
+msgid ""
+"Acceso remoto mediante WireGuard, proporcionando una red VPN privada para"
+" administrar el servidor y acceder a servicios internos sin necesidad de "
+"exponer directamente los servicios de administración a Internet."
+msgstr ""
+
+#: data/projects.py:528
+msgid ""
+"Configuración del router para publicar únicamente los servicios "
+"necesarios hacia el servidor. El acceso web se canaliza mediante Nginx y "
+"el acceso remoto mediante WireGuard, manteniendo los servicios de "
+"administración fuera de la exposición directa a Internet."
+msgstr ""
+
+#: data/projects.py:536
+msgid ""
+"Infraestructura protegida mediante varias capas de seguridad. UFW "
+"controla el tráfico de red mediante reglas específicas, mientras que "
+"Fail2ban monitoriza los servicios protegidos y aplica bloqueos "
+"automáticos ante determinados patrones de acceso malicioso o intentos "
+"reiterados de autenticación. El acceso SSH está restringido a redes de "
+"confianza y el acceso remoto se realiza mediante WireGuard. Nginx "
+"incorpora además configuraciones específicas de seguridad y control del "
+"tráfico de las aplicaciones publicadas."
+msgstr ""
+
+#: data/projects.py:548
+msgid ""
+"UFW utilizado como firewall principal del servidor, con reglas "
+"específicas para controlar el tráfico entrante y limitar el acceso a los "
+"diferentes servicios según su origen y necesidad."
+msgstr ""
+
+#: data/projects.py:554
+msgid ""
+"Fail2ban configurado para monitorizar servicios protegidos, detectar "
+"patrones de acceso no deseados y aplicar bloqueos automáticos frente a "
+"determinados intentos reiterados de autenticación o actividad sospechosa."
+msgstr ""
+
+#: data/projects.py:561
+msgid ""
+"Nginx configurado como punto de entrada de las aplicaciones web y proxy "
+"inverso, incorporando medidas de seguridad, restricciones de acceso y "
+"configuración específica para reducir la superficie de exposición de los "
+"servicios publicados."
+msgstr ""
+
+#: data/projects.py:568
+msgid ""
+"Administración del sistema Linux mediante terminal y servicios systemd, "
+"incluyendo gestión de procesos, configuración de servicios, supervisión "
+"del estado del sistema, mantenimiento y resolución de incidencias de "
+"infraestructura."
+msgstr ""
+
+#: data/projects.py:575
+msgid ""
+"Automatización de tareas periódicas mediante cron, incluyendo la "
+"ejecución programada de copias de seguridad y la actualización automática"
+" de la dirección IP dinámica utilizada para mantener la conectividad "
+"remota."
+msgstr ""
+
+#: data/projects.py:582
+msgid ""
+"Sistema de copias de seguridad automatizadas mediante tareas programadas,"
+" permitiendo mantener copias periódicas de la información y servicios "
+"relevantes de la infraestructura."
+msgstr ""
+
+#: data/projects.py:588
+msgid ""
+"Actualización automática de la dirección IP pública mediante una tarea "
+"programada, manteniendo actualizada la información necesaria para el "
+"acceso remoto y los servicios asociados a la conexión doméstica."
+msgstr ""
+
+#: data/projects.py:595
+msgid ""
+"Servidor Debian utilizado como infraestructura de producción para "
+"ejecutar aplicaciones web y servicios permanentes. Integra Nginx, "
+"Gunicorn, PostgreSQL, systemd, Docker, Docker Compose, WireGuard, "
+"Fail2ban, cron y herramientas de inteligencia artificial local."
+msgstr ""
+
+#: data/projects.py:621
+msgid "Administración de servidor Linux"
+msgstr ""
+
+#: data/projects.py:622
+msgid "Despliegue de aplicaciones web reales"
+msgstr ""
+
+#: data/projects.py:623
+msgid "Configuración de Nginx y Gunicorn"
+msgstr ""
+
+#: data/projects.py:624
+msgid "Gestión de servicios mediante systemd"
+msgstr ""
+
+#: data/projects.py:625
+msgid "Administración de PostgreSQL"
+msgstr ""
+
+#: data/projects.py:626
+msgid "Contenedores Docker y Docker Compose"
+msgstr ""
+
+#: data/projects.py:627
+msgid "Configuración de firewall mediante UFW"
+msgstr ""
+
+#: data/projects.py:628
+msgid "Protección automática mediante Fail2ban"
+msgstr ""
+
+#: data/projects.py:629
+msgid "Configuración de seguridad de Nginx"
+msgstr ""
+
+#: data/projects.py:630
+msgid "Control de servicios expuestos a Internet"
+msgstr ""
+
+#: data/projects.py:631
+msgid "Configuración de port forwarding"
+msgstr ""
+
+#: data/projects.py:632
+msgid "Acceso remoto mediante WireGuard"
+msgstr ""
+
+#: data/projects.py:633
+msgid "Gestión de redes y servicios internos"
+msgstr ""
+
+#: data/projects.py:634
+msgid "Automatización de tareas mediante cron"
+msgstr ""
+
+#: data/projects.py:635
+msgid "Copias de seguridad programadas"
+msgstr ""
+
+#: data/projects.py:636
+msgid "Actualización automática de IP dinámica"
+msgstr ""
+
+#: data/projects.py:637
+msgid "DDNS mediante Cloudflare"
+msgstr ""
+
+#: data/projects.py:638
+msgid "Ejecución local de herramientas de inteligencia artificial"
+msgstr ""
+
+#: data/projects.py:639
+msgid "Infraestructura utilizada para aplicaciones reales"
+msgstr ""
+
+#: data/projects.py:643
+msgid ""
+"Las aplicaciones web se ejecutan mediante Gunicorn y son publicadas "
+"mediante Nginx como servidor web y proxy inverso. Los servicios "
+"persistentes se gestionan mediante systemd, mientras que las aplicaciones"
+" y herramientas que requieren contenedorización se ejecutan mediante "
+"Docker Compose. Las tareas periódicas de mantenimiento, copias de "
+"seguridad y actualización de la IP dinámica se ejecutan automáticamente "
+"mediante cron."
+msgstr ""
+

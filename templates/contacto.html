@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block title %}{{ _("Contacto") }} | Santiago Castañón Moreschi{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/contacto.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<main class="contact-page">
+
+    <section class="contact-hero">
+
+        <span class="contact-label">{{ _("CONTACTO") }}</span>
+
+        <h1>{{ _("Hablemos.") }}</h1>
+
+        <p class="contact-intro">
+            {{ _("Si tienes un proyecto, una idea o simplemente quieres ponerte en contacto conmigo, puedes encontrarme en los siguientes canales.") }}
+        </p>
+
+    </section>
+
+    <section class="contact-content">
+
+        <div class="contact-section">
+
+            <h2>Email</h2>
+
+            <a class="contact-email" href="mailto:ascasw08@gmail.com">
+                <span class="contact-email-text">ascasw08@gmail.com</span>
+                <span class="contact-arrow">↗</span>
+            </a>
+
+        </div>
+
+        <div class="contact-section">
+
+            <h2>{{ _("Encuéntrame") }}</h2>
+
+            <div class="contact-socials">
+
+                <a
+                    class="social-card"
+                    href="https://github.com/zarzaweb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <div class="social-icon github-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                fill="currentColor"
+                                d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.86 10.94.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.54-3.87-1.54-.53-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.17 1.18a10.96 10.96 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.08.78 2.18v3.23c0 .31.21.67.8.56C20.21 21.41 23.5 17.09 23.5 12 23.5 5.65 18.35.5 12 .5Z"
+                            />
+                        </svg>
+                    </div>
+
+                    <div class="social-info">
+                        <strong>GitHub</strong>
+                        <span>{{ _("Código y proyectos") }}</span>
+                    </div>
+
+                    <span class="social-arrow">↗</span>
+
+                </a>
+
+                <a
+                    class="social-card"
+                    href="https://www.linkedin.com/in/santiago-casta%C3%B1on-33175a387"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <div class="social-icon linkedin-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                fill="currentColor"
+                                d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V8.99h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.61 0 4.28 2.37 4.28 5.46v6.29ZM5.33 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0-4.12ZM3.55 20.45h3.56V8.99H3.55v11.46ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.23 24 24 .77 24 1.73V1.73C24 .77 23.23 0 22.22 0Z"
+                            />
+                        </svg>
+                    </div>
+
+                    <div class="social-info">
+                        <strong>LinkedIn</strong>
+                        <span>{{ _("Perfil profesional") }}</span>
+                    </div>
+
+                    <span class="social-arrow">↗</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="contact-final">
+
+            <p>
+                {{ _("Estoy interesado en seguir creando proyectos, aprender nuevas tecnologías y convertir ideas en soluciones que funcionen.") }}
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+{% endblock %}

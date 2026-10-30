@@ -1,0 +1,222 @@
+{% extends "base.html" %}
+
+{% block title %}Santiago Castañón Moreschi · Portfolio{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<main>
+    <section id="desarollador">
+        <p>{{ _("Desarrollador de software") }}</p>
+
+    <h1>Santiago Castañón Moreschi</h1>
+
+    <h2>
+        {{ _("Desarrollo de aplicaciones web, desde la idea y el diseño hasta la programación y el despliegue.") }}
+    </h2>
+
+    <div class="home-actions">
+        <a href="{{ url_for('projects.proyectos') }}" class="button">
+            {{ _("Ver proyectos") }}
+        </a>
+        <a href="{{ url_for('main.contacto') }}" class="button button-secondary">{{ _("Contacto") }}</a>
+    </div>
+
+</section>
+
+<section id="certificaciones">
+    <p>{{ _("Certificaciones") }}</p>
+
+    <h2>{{ _("Formación y certificaciones") }}</h2>
+
+    <div class="certifications-grid">
+
+        <article class="certification-card">
+
+            <div class="certification-logo">
+                <img
+                    src="{{ url_for('static', filename='images/certification/pcap.png') }}"
+                    alt="PCAP"
+                >
+            </div>
+
+            <span>Python</span>
+
+            <h3>PCAP</h3>
+
+            <p>
+                Certified Associate in Python Programming.
+            </p>
+
+        </article>
+
+
+    <article class="certification-card">
+
+        <div class="certification-logo">
+            <img
+                src="{{ url_for('static', filename='images/certification/it.png') }}"
+                alt="IT Specialist"
+            >
+        </div>
+
+        <span>Python</span>
+
+        <h3>IT Specialist</h3>
+
+        <p>
+            IT Specialist certification.
+        </p>
+
+    </article>
+
+
+    </div>
+</section>
+
+<section id="tecnologias">
+    <p>{{ _("Tecnologías") }}</p>
+
+    <h2>{{ _("Herramientas con las que trabajo") }}</h2>
+
+    <div class="technologies-grid">
+
+        <div class="technology-card">
+            <img src="{{ url_for('static', filename='images/technologies/python.svg') }}" alt="Python">
+            <span>Python</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="{{ url_for('static', filename='images/technologies/javascript.svg') }}" alt="JavaScript">
+            <span>JavaScript</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="{{ url_for('static', filename='images/technologies/flask.svg') }}" alt="Flask">
+            <span>Flask</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="{{ url_for('static', filename='images/technologies/django.svg') }}" alt="Django">
+            <span>Django</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="{{ url_for('static', filename='images/technologies/postgresql.svg') }}" alt="PostgreSQL">
+            <span>PostgreSQL</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="{{ url_for('static', filename='images/technologies/leaflet.svg') }}" alt="Leaflet">
+            <span>Leaflet</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="{{ url_for('static', filename='images/technologies/css.svg') }}" alt="CSS">
+            <span>CSS</span>
+        </div>    
+
+        <div class="technology-card">
+            <img src="{{ url_for('static', filename='images/technologies/linux.svg') }}" alt="Linux">
+            <span>Linux</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="{{ url_for('static', filename='images/technologies/gunicorn.svg') }}" alt="Gunicorn">
+            <span>Gunicorn</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="{{ url_for('static', filename='images/technologies/docker.svg') }}" alt="Docker">
+            <span>Docker</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="{{ url_for('static', filename='images/technologies/nginx.svg') }}" alt="Nginx">
+            <span>Nginx</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="{{ url_for('static', filename='images/technologies/git.svg') }}" alt="Git">
+            <span>Github</span>
+        </div>    
+
+    </div>
+</section>
+
+
+<section id="proyectos">
+    <p>{{ _("Proyectos") }}</p>
+
+    <h2>{{ _("Aplicaciones que he desarrollado") }}</h2>
+
+    <div class="projects-grid">
+
+        <article class="project-card">
+            <span>Flask · Web · PostgreSQL · PostGIS</span>
+            
+            <h3>Zarzalejo Boulder On-Line</h3>
+
+            <p>
+                {{ _("Plataforma web para la gestión y consulta de la escalada en bloque de Zarzalejo.") }}
+            </p>
+
+            <a href="{{ url_for('projects.proyecto', slug='zarzalejo-boulder') }}">
+                {{ _("Ver proyecto →") }}
+            </a>
+        </article>
+
+        <article class="project-card">
+            <span>Flask · Web · PostgreSQL · JavaScript</span>
+
+            <h3>Manduca {{ _("Gastronomía en Movimiento") }}</h3>
+
+            <p>
+                {{ _("Aplicación web para la gestión y presentación de servicios de catering con presupuestos en directo.") }}
+            </p>
+
+            <a href="{{ url_for('projects.proyecto', slug='manduca') }}">
+                {{ _("Ver proyecto →") }}
+            </a>
+        </article>
+
+
+        <article class="project-card">
+            <span>Python · Django · PostgreSQL · Automatización · PDF · Excel</span>
+
+            <h3>{{ _("Automatización empresarial de reclamaciones") }}</h3>
+
+            <p>
+                {{ _("Aplicación para automatizar la gestión y procesamiento de reclamaciones de calidad para una empresa del sector naviero, por medio de pandas y openpyxl, con generación de informes en Excel.") }}
+            </p>
+
+            <a href="{{ url_for('projects.proyecto', slug='reclamaciones-calidad') }}">
+                {{ _("Ver proyecto →") }}
+            </a>
+        </article>
+
+        <article class="project-card">
+            <span>Debian · Docker · Gunicorn · Nginx · WireGuard · Ollama</span>
+
+            <h3>{{ _("Servidor doméstico e infraestructura") }}</h3>
+
+            <p>
+                {{ _("Servidor Linux utilizado para alojar y ejecutar mis aplicaciones, servicios y herramientas de desarrollo, con administración de sistemas, contenedores y servicios de red.") }}
+            </p>
+
+            <a href="{{ url_for('projects.proyecto', slug='servidor-domestico') }}">
+                {{ _("Ver proyecto →") }}
+            </a>
+        </article>
+
+    </div>
+</section>
+
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,259 @@
+.project-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 160px 40px 100px;
+}
+
+.project-hero {
+    max-width: 850px;
+    margin-bottom: 100px;
+}
+
+.project-hero > p:first-child {
+    color: #2a9d8f;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.project-hero h1 {
+    margin: 15px 0 25px;
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 0.95;
+}
+
+.project-intro {
+    color: #bdbdbd;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    max-width: 750px;
+}
+
+.project-section {
+    padding: 70px 0;
+    border-top: 1px solid #292929;
+}
+
+.project-section h2 {
+    margin: 0 0 30px;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.project-section p {
+    max-width: 800px;
+    color: #bdbdbd;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.project-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.project-features li {
+    padding: 20px;
+    background: #191919;
+    border: 1px solid #292929;
+    border-radius: 8px;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tech-list span {
+    padding: 10px 16px;
+    background: #191919;
+    border: 1px solid #292929;
+    border-radius: 6px;
+    color: #bdbdbd;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .project-page {
+        padding: 130px 25px 70px;
+    }
+
+    .project-hero {
+        margin-bottom: 60px;
+    }
+
+    .project-section {
+        padding: 50px 0;
+    }
+
+    .project-features,
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Carrusel de capturas */
+
+.project-screenshots {
+    padding-top: 20px;
+}
+
+.project-carousel {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.project-slide {
+    flex: 0 0 calc((100% - 60px) / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-slide img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 20px;
+}
+
+.carousel-indicator {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #777777;
+    cursor: pointer;
+}
+
+.carousel-indicator.active {
+    background: #2a9d8f;
+}
+
+@media (max-width: 768px) {
+
+    .project-slide {
+        flex: 0 0 100%;
+    }
+
+    .project-slide img {
+        max-height: 450px;
+    }
+}
+
+/* Botón de imagen */
+
+.project-image-button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: zoom-in;
+    touch-action: pan-y;
+}
+
+.project-slides {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.4s ease;
+    cursor: grab;
+    user-select: none;
+}
+
+.project-slides.dragging {
+    cursor: grabbing;
+    transition: none;
+}
+
+/* Lightbox */
+
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+
+    background: rgba(0, 0, 0, 0.92);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+}
+
+.image-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-image {
+    display: block;
+
+    max-width: 95vw;
+    max-height: 90vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 6px;
+}
+
+.lightbox-close {
+    position: absolute;
+
+    top: 25px;
+    right: 30px;
+
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid #444;
+    border-radius: 50%;
+
+    background: rgba(17, 17, 17, 0.8);
+    color: #ffffff;
+
+    font-size: 2rem;
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 2001;
+}
+
+.lightbox-close:hover {
+    background: #2a9d8f;
+    border-color: #2a9d8f;
+}

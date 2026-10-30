@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}{{ _("Proyectos") }} · Santiago Castañón Moreschi{% endblock %}
+
+{% block content %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+{% endblock %}
+
+<main>
+
+    <section id="proyectos">
+        <p>{{ _("Proyectos") }}</p>
+
+        <h1>{{ _("Aplicaciones que he desarrollado") }}</h1>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <span>Flask · Web · PostgreSQL · PostGIS</span>
+
+                <h2>Zarzalejo Boulder On-Line</h2>
+
+                <p>
+                    {{ _("Plataforma web para la escalada en bloque de Zarzalejo.") }}
+                </p>
+
+                <a href="{{ url_for('projects.proyecto', slug='zarzalejo-boulder') }}">
+                    {{ _("Ver proyecto →") }}
+                </a>
+            </article>
+
+            <article class="project-card">
+                <span>Flask · Web · PostgreSQL</span>
+
+                <h2>Manduca {{ _("Gastronomía en Movimiento") }}</h2>
+
+                <p>
+                    {{ _("Aplicación web para la gestión y presentación de servicios de catering.") }}
+                </p>
+
+                <a href="{{ url_for('projects.proyecto', slug='manduca') }}">
+                    {{ _("Ver proyecto →") }}
+                </a>
+            </article>
+
+            <article class="project-card">
+                <span>Python · Django · Docker · Automatización · Excel</span>
+
+                <h3>{{ _("Automatización de reclamaciones de calidad") }}</h3>
+
+                <p>
+                    {{ _("Aplicación para automatizar la gestión y procesamiento de reclamaciones de calidad para una empresa del sector naviero.") }}
+                </p>
+
+                <a href="{{ url_for('projects.proyecto', slug='reclamaciones-calidad') }}">
+                    {{ _("Ver proyecto →") }}
+                </a>
+            </article>
+
+
+            <article class="project-card">
+            <span>Debian · Docker · Nginx · WireGuard · Ollama</span>
+
+            <h3>{{ _("Servidor doméstico e infraestructura") }}</h3>
+
+            <p>
+                {{ _("Servidor Linux utilizado para alojar y ejecutar mis aplicaciones, servicios y herramientas de desarrollo, con administración de sistemas, contenedores y servicios de red.") }}
+            </p>
+
+            <a href="{{ url_for('projects.proyecto', slug='servidor-domestico') }}">
+                {{ _("Ver proyecto →") }}
+            </a>
+        </article>
+
+        </div>
+    </section>
+
+</main>
+
+{% endblock %}

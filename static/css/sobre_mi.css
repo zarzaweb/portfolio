@@ -1,0 +1,127 @@
+/* =========================
+   SOBRE MÍ
+   ========================= */
+
+.about-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 160px 40px 120px;
+}
+
+.about-hero {
+    max-width: 900px;
+    margin-bottom: 120px;
+}
+
+.about-label {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: #2a9d8f;
+    font-weight: 600;
+}
+
+.about-hero h1 {
+    margin: 0 0 35px;
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+
+.about-intro {
+    max-width: 720px;
+    margin: 0;
+    font-size: 1.35rem;
+    line-height: 1.7;
+    opacity: 0.75;
+}
+
+.about-content {
+    max-width: 900px;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 60px;
+    padding: 70px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-section h2 {
+    margin: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #2a9d8f;
+}
+
+.about-text p {
+    margin: 0 0 25px;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    opacity: 0.82;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+.about-text strong,
+.about-final strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.about-final {
+    margin-top: 70px;
+    padding: 60px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-final p {
+    max-width: 850px;
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .about-page {
+        padding: 120px 25px 80px;
+    }
+
+    .about-hero {
+        margin-bottom: 80px;
+    }
+
+    .about-hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .about-intro {
+        font-size: 1.15rem;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 50px 0;
+    }
+
+    .about-final {
+        margin-top: 40px;
+        padding: 45px 0;
+    }
+
+    .about-final p {
+        font-size: 1.3rem;
+    }
+}

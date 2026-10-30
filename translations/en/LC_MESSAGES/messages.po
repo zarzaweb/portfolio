@@ -1,0 +1,421 @@
+# English translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-10-20 12:34+0200\n"
+"PO-Revision-Date: 2026-10-05 18:14+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: templates/base.html:26 templates/index.html:153 templates/proyectos.html:3
+#: templates/proyectos.html:14
+msgid "Proyectos"
+msgstr "Projects"
+
+#: templates/base.html:27 templates/sobre_mi.html:3
+msgid "Sobre mí"
+msgstr "About me"
+
+#: templates/base.html:28 templates/contacto.html:3 templates/index.html:26
+msgid "Contacto"
+msgstr "Contact"
+
+#: templates/contacto.html:15
+msgid "CONTACTO"
+msgstr "CONTACT"
+
+#: templates/contacto.html:17
+msgid "Hablemos."
+msgstr "Let's talk."
+
+#: templates/contacto.html:20
+msgid ""
+"Si tienes un proyecto, una idea o simplemente quieres ponerte en contacto"
+" conmigo, puedes encontrarme en los siguientes canales."
+msgstr ""
+"If you have a project, an idea, or simply want to get in touch with me, "
+"you can find me through the following channels."
+
+#: templates/contacto.html:40
+msgid "Encuéntrame"
+msgstr "Find me"
+
+#: templates/contacto.html:62
+msgid "Código y proyectos"
+msgstr "Code and projects"
+
+#: templates/contacto.html:87
+msgid "Perfil profesional"
+msgstr "Professional profile"
+
+#: templates/contacto.html:101
+msgid ""
+"Estoy interesado en seguir creando proyectos, aprender nuevas tecnologías"
+" y convertir ideas en soluciones que funcionen."
+msgstr ""
+"I am interested in continuing to create projects, learn new technologies,"
+" and turn ideas into solutions that work."
+
+#: templates/index.html:14
+msgid "Desarrollador de software"
+msgstr "Software Developer"
+
+#: templates/index.html:19
+msgid ""
+"Desarrollo de aplicaciones web, desde la idea y el diseño hasta la "
+"programación y el despliegue."
+msgstr ""
+"Web application development, from idea and design to programming and "
+"deployment."
+
+#: templates/index.html:24
+msgid "Ver proyectos"
+msgstr "View projects"
+
+#: templates/index.html:32
+msgid "Certificaciones"
+msgstr "Certifications"
+
+#: templates/index.html:34
+msgid "Formación y certificaciones"
+msgstr "Education and certifications"
+
+#: templates/index.html:82 templates/proyecto.html:329
+msgid "Tecnologías"
+msgstr "Technologies"
+
+#: templates/index.html:84
+msgid "Herramientas con las que trabajo"
+msgstr "Tools I work with"
+
+#: templates/index.html:155 templates/proyectos.html:16
+msgid "Aplicaciones que he desarrollado"
+msgstr "Applications I have developed"
+
+#: templates/index.html:165
+msgid ""
+"Plataforma web para la gestión y consulta de la escalada en bloque de "
+"Zarzalejo."
+msgstr "Web platform for managing and exploring bouldering in Zarzalejo."
+
+#: templates/index.html:169 templates/index.html:183 templates/index.html:198
+#: templates/index.html:212 templates/proyectos.html:30
+#: templates/proyectos.html:44 templates/proyectos.html:58
+#: templates/proyectos.html:73
+msgid "Ver proyecto →"
+msgstr "View project →"
+
+#: templates/index.html:176 templates/proyectos.html:37
+msgid "Gastronomía en Movimiento"
+msgstr "Gastronomy in Motion"
+
+#: templates/index.html:179
+msgid ""
+"Aplicación web para la gestión y presentación de servicios de catering "
+"con presupuestos en directo."
+msgstr ""
+"Web application for managing and presenting catering services with live "
+"quotes."
+
+#: templates/index.html:191
+msgid "Automatización empresarial de reclamaciones"
+msgstr "Business Claims Automation"
+
+#: templates/index.html:194
+msgid ""
+"Aplicación para automatizar la gestión y procesamiento de reclamaciones "
+"de calidad para una empresa del sector naviero, por medio de pandas y "
+"openpyxl, con generación de informes en Excel."
+msgstr ""
+"Application to automate the management and processing of quality claims "
+"for a company in the shipping industry, using pandas and openpyxl, with "
+"Excel report generation."
+
+#: templates/index.html:205 templates/proyectos.html:66
+msgid "Servidor doméstico e infraestructura"
+msgstr "Home Server and Infrastructure"
+
+#: templates/index.html:208 templates/proyectos.html:69
+msgid ""
+"Servidor Linux utilizado para alojar y ejecutar mis aplicaciones, "
+"servicios y herramientas de desarrollo, con administración de sistemas, "
+"contenedores y servicios de red."
+msgstr ""
+"Linux server used to host and run my applications, services, and "
+"development tools, with system administration, container management, and "
+"network services."
+
+#: templates/proyecto.html:40
+msgid "Captura"
+msgstr "Screenshot"
+
+#: templates/proyecto.html:54
+msgid "Ir a la posición"
+msgstr "Go to position"
+
+#: templates/proyecto.html:67
+msgid "El proyecto"
+msgstr "The project"
+
+#: templates/proyecto.html:80
+msgid "Arquitectura"
+msgstr "Architecture"
+
+#: templates/proyecto.html:90
+msgid "Procesamiento"
+msgstr "Processing"
+
+#: templates/proyecto.html:101
+msgid "Desarrollo"
+msgstr "Development"
+
+#: templates/proyecto.html:104
+msgid "Backend"
+msgstr "Backend"
+
+#: templates/proyecto.html:115
+msgid "Frontend"
+msgstr "Frontend"
+
+#: templates/proyecto.html:129
+msgid "Base de datos"
+msgstr "Database"
+
+#: templates/proyecto.html:142
+msgid "Funcionalidades"
+msgstr "Features"
+
+#: templates/proyecto.html:155
+msgid "Geolocalización"
+msgstr "Geolocation"
+
+#: templates/proyecto.html:166
+msgid "Estadísticas"
+msgstr "Statistics"
+
+#: templates/proyecto.html:177
+msgid "Usuarios y autenticación"
+msgstr "Users and authentication"
+
+#: templates/proyecto.html:188
+msgid "Seguridad"
+msgstr "Security"
+
+#: templates/proyecto.html:198
+msgid "Firewall"
+msgstr "Firewall"
+
+#: templates/proyecto.html:220
+msgid "Seguridad de Nginx"
+msgstr "Nginx Security"
+
+#: templates/proyecto.html:231
+msgid "Administración"
+msgstr "Administration"
+
+#: templates/proyecto.html:241
+msgid "Automatización"
+msgstr "Automation"
+
+#: templates/proyecto.html:252
+msgid "Copias de seguridad"
+msgstr "Backups"
+
+#: templates/proyecto.html:263
+msgid "IP dinámica y DDNS"
+msgstr "Dynamic IP and DDNS"
+
+#: templates/proyecto.html:273
+msgid "Servicios"
+msgstr "Services"
+
+#: templates/proyecto.html:286
+msgid "Red y conectividad"
+msgstr "Networking and connectivity"
+
+#: templates/proyecto.html:296
+msgid "Acceso remoto"
+msgstr "Remote Access"
+
+#: templates/proyecto.html:307
+msgid "Redirección de puertos"
+msgstr "Port Forwarding"
+
+#: templates/proyecto.html:318
+msgid "Infraestructura"
+msgstr "Infrastructure"
+
+#: templates/proyecto.html:342
+msgid "Aspectos destacados"
+msgstr "Highlights"
+
+#: templates/proyecto.html:355
+msgid "Despliegue"
+msgstr "Deployment"
+
+#: templates/proyecto.html:365
+msgid "Cerrar"
+msgstr "Close"
+
+#: templates/proyectos.html:26
+msgid "Plataforma web para la escalada en bloque de Zarzalejo."
+msgstr "Web platform for bouldering in Zarzalejo."
+
+#: templates/proyectos.html:40
+msgid "Aplicación web para la gestión y presentación de servicios de catering."
+msgstr "Web application for managing and presenting catering services."
+
+#: templates/proyectos.html:51
+msgid "Automatización de reclamaciones de calidad"
+msgstr "Quality Claims Automation"
+
+#: templates/proyectos.html:54
+msgid ""
+"Aplicación para automatizar la gestión y procesamiento de reclamaciones "
+"de calidad para una empresa del sector naviero."
+msgstr ""
+"Application to automate the management and processing of quality claims "
+"for a company in the shipping industry."
+
+#: templates/sobre_mi.html:15
+msgid "SOBRE MÍ"
+msgstr "ABOUT ME"
+
+#: templates/sobre_mi.html:18
+msgid "Desarrollo aplicaciones."
+msgstr "I develop applications."
+
+#: templates/sobre_mi.html:19
+msgid "También construyo todo lo que hay detrás."
+msgstr "I also build everything behind them."
+
+#: templates/sobre_mi.html:23
+msgid ""
+"Soy Santiago Castañón Moreschi, desarrollador web y creador de soluciones"
+" digitales."
+msgstr ""
+"I am Santiago Castañón Moreschi, a web developer and creator of digital "
+"solutions."
+
+#: templates/sobre_mi.html:31
+msgid "Quién soy"
+msgstr "Who I am"
+
+#: templates/sobre_mi.html:35
+msgid ""
+"Me interesa entender cómo funcionan las cosas de principio a fin. No solo"
+" desarrollar una aplicación, sino conocer todo lo que hay detrás: desde "
+"el diseño y la experiencia de usuario hasta el backend, las bases de "
+"datos, los servidores, las redes y el despliegue."
+msgstr ""
+"I am interested in understanding how things work from beginning to end. "
+"Not only developing an application, but understanding everything behind "
+"it: from design and user experience to the backend, databases, servers, "
+"networks, and deployment."
+
+#: templates/sobre_mi.html:39
+msgid "Trabajo principalmente con"
+msgstr "I mainly work with"
+
+#: templates/sobre_mi.html:40
+msgid "además de tecnologías como"
+msgstr "as well as technologies such as"
+
+#: templates/sobre_mi.html:45
+msgid ""
+"También me ocupo de los entornos donde funcionan mis aplicaciones, "
+"configurando y manteniendo servicios, servidores y sistemas de "
+"despliegue."
+msgstr ""
+"I also take care of the environments where my applications run, "
+"configuring and maintaining services, servers, and deployment systems."
+
+#: templates/sobre_mi.html:52
+msgid "Proyectos reales"
+msgstr "Real-world projects"
+
+#: templates/sobre_mi.html:56
+msgid ""
+"He desarrollado proyectos propios completos, desde aplicaciones web y "
+"plataformas para comunidades hasta herramientas de gestión y "
+"automatización."
+msgstr ""
+"I have developed complete projects of my own, from web applications and "
+"platforms for communities to management and automation tools."
+
+#: templates/sobre_mi.html:60
+msgid ""
+"Algunos de estos proyectos están desplegados en servidores reales y "
+"requieren no solo desarrollar nuevas funcionalidades, sino también "
+"mantener el sistema, resolver problemas y asegurar que todo siga "
+"funcionando correctamente."
+msgstr ""
+"Some of these projects are deployed on real servers and require not only "
+"developing new features, but also maintaining the system, solving "
+"problems, and ensuring that everything continues to work correctly."
+
+#: templates/sobre_mi.html:67
+msgid "Cómo trabajo"
+msgstr "How I work"
+
+#: templates/sobre_mi.html:71
+msgid ""
+"Una parte importante de mi forma de aprender y trabajar es hacerlo de "
+"manera práctica. Muchos de mis proyectos nacen de una necesidad concreta "
+"y evolucionan a medida que aparecen nuevos problemas y necesidades."
+msgstr ""
+"An important part of how I learn and work is doing things in a practical "
+"way. Many of my projects start from a specific need and evolve as new "
+"problems and requirements arise."
+
+#: templates/sobre_mi.html:75
+msgid ""
+"No me interesa únicamente que una aplicación funcione en mi ordenador. Me"
+" gusta conocer todo el recorrido:"
+msgstr ""
+"I am not only interested in making an application work on my computer. I "
+"like to understand the whole process:"
+
+#: templates/sobre_mi.html:76
+msgid ""
+"cómo se construye, cómo se conecta, dónde se almacena la información, "
+"cómo se despliega y qué ocurre cuando algo falla."
+msgstr ""
+"how it is built, how it connects, where information is stored, how it is "
+"deployed, and what happens when something fails."
+
+#: templates/sobre_mi.html:80
+msgid ""
+"Mi forma de trabajar se basa en construir, probar, investigar y entender "
+"los problemas antes de buscar una solución. Prefiero soluciones claras y "
+"mantenibles frente a complicar innecesariamente un sistema."
+msgstr ""
+"My way of working is based on building, testing, researching, and "
+"understanding problems before looking for a solution. I prefer clear and "
+"maintainable solutions over unnecessarily complicating a system."
+
+#: templates/sobre_mi.html:88
+msgid ""
+"Para mí, desarrollar software no consiste solamente en escribir código. "
+"Consiste en"
+msgstr "For me, developing software is not just about writing code. It is about"
+
+#: templates/sobre_mi.html:89
+msgid "crear sistemas que resuelvan problemas reales"
+msgstr "creating systems that solve real problems"
+
+#: templates/sobre_mi.html:90
+msgid "y que puedan mantenerse, evolucionar y seguir funcionando con el tiempo."
+msgstr "and can be maintained, evolve, and continue to work over time."
+
