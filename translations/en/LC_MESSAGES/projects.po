@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-10-21 14:10+0200\n"
+"POT-Creation-Date: 2026-11-04 10:34+0100\n"
 "PO-Revision-Date: 2026-10-20 13:06+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -550,29 +550,173 @@ msgstr "Results listings and lookup"
 msgid "Sistema de usuarios con diferentes perfiles"
 msgstr "User system with different roles"
 
-#: data/projects.py:440
+#: data/projects.py:440 data/projects.py:573
 msgid "Despliegue mediante Docker Compose"
 msgstr "Deployment using Docker Compose"
 
-#: data/projects.py:456
+#: data/projects.py:461
+msgid "Monitorización de infraestructura · Automatización"
+msgstr "Infrastructure Monitoring · Automation"
+
+#: data/projects.py:465
+msgid ""
+"Plataforma distribuida para recopilar, centralizar y visualizar "
+"información de infraestructura Linux mediante recolectores Python, Django"
+" y PostgreSQL."
+msgstr ""
+"Distributed platform for collecting, centralizing, and visualizing "
+"Linux infrastructure data using Python collectors, Django, and "
+"PostgreSQL."
+
+#: data/projects.py:471
+msgid ""
+"Proyecto de monitorización de infraestructura que permite recopilar "
+"información de servidores Linux, centralizar informes y consultar su "
+"evolución desde una plataforma web. La arquitectura separa la generación "
+"de informes en el servidor monitorizado de su recepción, almacenamiento y"
+" visualización en una plataforma central."
+msgstr ""
+"Infrastructure monitoring project designed to collect data from Linux "
+"servers, centralize reports, and track their evolution through a web "
+"platform. The architecture separates report generation on the monitored "
+"server from report reception, storage, and visualization on a central "
+"platform."
+
+#: data/projects.py:480
+msgid ""
+"Diseño y desarrollo de la arquitectura distribuida, recolectores de "
+"información, comunicación SSH, integración con Django ORM, persistencia "
+"en PostgreSQL y desarrollo de la interfaz de monitorización."
+msgstr ""
+"Design and development of the distributed architecture, data collectors, "
+"SSH communication, Django ORM integration, PostgreSQL persistence, and "
+"monitoring interface."
+
+#: data/projects.py:487
+msgid ""
+"Arquitectura distribuida entre dos equipos. El servidor Kakaroto ejecuta "
+"recolectores Python independientes que generan informes JSON. Un "
+"collector Python, desplegado en el equipo central mediante Docker "
+"Compose, recupera los informes mediante SSH y los incorpora a PostgreSQL "
+"utilizando los modelos de Django ORM. La aplicación Django consulta y "
+"presenta la información mediante su dashboard."
+msgstr ""
+"Distributed architecture running across two machines. The Kakaroto "
+"server runs independent Python collectors that generate JSON reports. "
+"A Python collector, deployed on the central machine using Docker "
+"Compose, retrieves the reports over SSH and stores them in PostgreSQL "
+"through Django ORM models. The Django application queries and displays "
+"the information through its dashboard."
+
+#: data/projects.py:497
+msgid ""
+"El procesamiento se divide en dos etapas. En Kakaroto, los recolectores "
+"obtienen información de los registros y servicios del sistema y generan "
+"informes estructurados en JSON. Posteriormente, el collector central "
+"recupera esos informes mediante SSH y los procesa para incorporarlos a la"
+" base de datos a través de Django ORM."
+msgstr ""
+"Processing is divided into two stages. On Kakaroto, collectors retrieve "
+"information from system logs and services and generate structured JSON "
+"reports. The central collector then retrieves these reports over SSH "
+"and processes them for storage in the database through Django ORM."
+
+#: data/projects.py:529
+msgid "Recopilación automatizada de información de infraestructura"
+msgstr "Automated infrastructure data collection"
+
+#: data/projects.py:530
+msgid "Generación de informes estructurados en JSON"
+msgstr "Generation of structured JSON reports"
+
+#: data/projects.py:531
+msgid "Comunicación entre equipos mediante SSH"
+msgstr "Communication between machines using SSH"
+
+#: data/projects.py:532
+msgid "Transferencia centralizada de informes"
+msgstr "Centralized report transfer"
+
+#: data/projects.py:533
+msgid "Persistencia de información mediante Django ORM"
+msgstr "Data persistence using Django ORM"
+
+#: data/projects.py:534 data/projects.py:571
+msgid "Almacenamiento histórico en PostgreSQL"
+msgstr "Historical data storage in PostgreSQL"
+
+#: data/projects.py:535
+msgid "Modelos para la gestión de informes de monitorización"
+msgstr "Models for managing monitoring reports"
+
+#: data/projects.py:536
+msgid "Dashboard web para consultar la información"
+msgstr "Web dashboard for accessing monitoring data"
+
+#: data/projects.py:540
+msgid ""
+"Aplicación Django organizada mediante modelos y vistas para gestionar los"
+" informes recibidos y presentar la información almacenada en la "
+"plataforma central."
+msgstr ""
+"Django application organized around models and views to manage received "
+"reports and display the information stored on the central platform."
+
+#: data/projects.py:546
+msgid ""
+"Entorno central desplegado mediante Docker Compose, con una aplicación "
+"Django y un collector Python organizados como componentes independientes."
+" El servidor monitorizado mantiene sus propios recolectores y genera los "
+"informes que posteriormente se recuperan mediante SSH."
+msgstr ""
+"Central environment deployed using Docker Compose, with a Django "
+"application and a Python collector organized as independent components. "
+"The monitored server runs its own collectors and generates reports "
+"that are subsequently retrieved over SSH."
+
+#: data/projects.py:566
+msgid "Arquitectura distribuida entre dos equipos"
+msgstr "Distributed architecture across two machines"
+
+#: data/projects.py:567
+msgid "Separación entre recopilación y procesamiento central"
+msgstr "Separation of data collection and central processing"
+
+#: data/projects.py:568
+msgid "Comunicación segura mediante SSH"
+msgstr "Secure communication using SSH"
+
+#: data/projects.py:569
+msgid "Procesamiento de informes JSON"
+msgstr "JSON report processing"
+
+#: data/projects.py:570
+msgid "Persistencia mediante Django ORM"
+msgstr "Data persistence using Django ORM"
+
+#: data/projects.py:572
+msgid "Desarrollo de dashboard de monitorización"
+msgstr "Development of a monitoring dashboard"
+
+#: data/projects.py:586
 msgid "Servidor doméstico e infraestructura"
 msgstr "Home Server and Infrastructure"
 
-#: data/projects.py:458
+#: data/projects.py:588
 msgid "Infraestructura · Administración de sistemas"
 msgstr "Infrastructure · Systems Administration"
 
-#: data/projects.py:461
+#: data/projects.py:591
 msgid ""
 "Infraestructura Linux administrada para desplegar aplicaciones web, "
 "gestionar servicios, redes, contenedores, seguridad y procesos "
 "automatizados de mantenimiento."
 msgstr ""
-"Managed Linux infrastructure for deploying web applications and "
-"managing services, networks, containers, security, and automated "
-"maintenance tasks."
+"Managed Linux infrastructure for deploying web applications and managing "
+"services, networks, containers, security, and automated maintenance "
+"tasks."
 
-#: data/projects.py:467
+#: data/projects.py:597
 msgid ""
 "Servidor Linux utilizado como infraestructura real para el despliegue y "
 "funcionamiento permanente de aplicaciones web y servicios. El entorno "
@@ -586,7 +730,7 @@ msgstr ""
 "network services, remote access, artificial intelligence tools, and "
 "automated maintenance tasks."
 
-#: data/projects.py:476
+#: data/projects.py:606
 msgid ""
 "Administración integral de la infraestructura, incluyendo la instalación "
 "y configuración del sistema, despliegue de aplicaciones, gestión de "
@@ -599,8 +743,22 @@ msgstr ""
 "configuration, security, remote access, containers, databases, task "
 "automation, backups, and environment maintenance."
 
+#: data/projects.py:615
+msgid ""
+"Infraestructura basada en Debian Linux que integra Nginx como servidor "
+"web y proxy inverso, Gunicorn para ejecutar aplicaciones Python, "
+"PostgreSQL como servicio de base de datos, systemd para la gestión de "
+"servicios y Docker y Docker Compose para ejecutar aplicaciones y "
+"herramientas contenedorizadas. Las tareas periódicas de mantenimiento se "
+"automatizan mediante cron."
+msgstr ""
+"Debian Linux infrastructure integrating Nginx as a web server and "
+"reverse proxy, Gunicorn for running Python applications, PostgreSQL "
+"as a database service, systemd for service management, and Docker "
+"and Docker Compose for running containerized applications and tools. "
+"Recurring maintenance tasks are automated using cron."
 
-#: data/projects.py:512
+#: data/projects.py:638
 msgid ""
 "Configuración de red local y acceso remoto mediante WireGuard. El "
 "servidor dispone de una red local privada y una red VPN independiente "
@@ -608,22 +766,22 @@ msgid ""
 "aplicaciones web, mientras que los servicios internos permanecen "
 "restringidos a las redes o interfaces necesarias."
 msgstr ""
-"Local network configuration and remote access using WireGuard. The "
-"server has a private local network and a separate VPN for remote access. "
-"Nginx acts as the entry point for web applications, while internal "
-"services remain restricted to the networks or interfaces they require."
+"Local network configuration and remote access using WireGuard. The server"
+" has a private local network and a separate VPN for remote access. Nginx "
+"acts as the entry point for web applications, while internal services "
+"remain restricted to the networks or interfaces they require."
 
-#: data/projects.py:521
+#: data/projects.py:647
 msgid ""
 "Acceso remoto mediante WireGuard, proporcionando una red VPN privada para"
 " administrar el servidor y acceder a servicios internos sin necesidad de "
 "exponer directamente los servicios de administración a Internet."
 msgstr ""
 "Remote access through WireGuard, providing a private VPN for server "
-"administration and access to internal services without directly "
-"exposing administrative services to the Internet."
+"administration and access to internal services without directly exposing "
+"administrative services to the Internet."
 
-#: data/projects.py:528
+#: data/projects.py:654
 msgid ""
 "Configuración del router para publicar únicamente los servicios "
 "necesarios hacia el servidor. El acceso web se canaliza mediante Nginx y "
@@ -632,10 +790,10 @@ msgid ""
 msgstr ""
 "Router configuration to expose only the services required to reach the "
 "server. Web traffic is routed through Nginx and remote access through "
-"WireGuard, keeping administrative services from being directly exposed "
-"to the Internet."
+"WireGuard, keeping administrative services from being directly exposed to"
+" the Internet."
 
-#: data/projects.py:536
+#: data/projects.py:662
 msgid ""
 "Infraestructura protegida mediante varias capas de seguridad. UFW "
 "controla el tráfico de red mediante reglas específicas, mientras que "
@@ -647,34 +805,34 @@ msgid ""
 "tráfico de las aplicaciones publicadas."
 msgstr ""
 "Infrastructure protected by multiple layers of security. UFW controls "
-"network traffic through specific rules, while Fail2ban monitors "
-"protected services and automatically blocks certain malicious access "
-"patterns or repeated authentication attempts. SSH access is restricted "
-"to trusted networks, and remote access is provided through WireGuard. "
-"Nginx also incorporates specific security settings and traffic controls "
-"for published applications."
+"network traffic through specific rules, while Fail2ban monitors protected"
+" services and automatically blocks certain malicious access patterns or "
+"repeated authentication attempts. SSH access is restricted to trusted "
+"networks, and remote access is provided through WireGuard. Nginx also "
+"incorporates specific security settings and traffic controls for "
+"published applications."
 
-#: data/projects.py:548
+#: data/projects.py:674
 msgid ""
 "UFW utilizado como firewall principal del servidor, con reglas "
 "específicas para controlar el tráfico entrante y limitar el acceso a los "
 "diferentes servicios según su origen y necesidad."
 msgstr ""
-"UFW used as the server's primary firewall, with specific rules to "
-"control incoming traffic and restrict access to services according to "
-"their source and requirements."
+"UFW used as the server's primary firewall, with specific rules to control"
+" incoming traffic and restrict access to services according to their "
+"source and requirements."
 
-#: data/projects.py:554
+#: data/projects.py:680
 msgid ""
 "Fail2ban configurado para monitorizar servicios protegidos, detectar "
 "patrones de acceso no deseados y aplicar bloqueos automáticos frente a "
 "determinados intentos reiterados de autenticación o actividad sospechosa."
 msgstr ""
-"Fail2ban configured to monitor protected services, detect unwanted "
-"access patterns, and automatically block certain repeated authentication "
+"Fail2ban configured to monitor protected services, detect unwanted access"
+" patterns, and automatically block certain repeated authentication "
 "attempts or suspicious activity."
 
-#: data/projects.py:561
+#: data/projects.py:687
 msgid ""
 "Nginx configurado como punto de entrada de las aplicaciones web y proxy "
 "inverso, incorporando medidas de seguridad, restricciones de acceso y "
@@ -685,7 +843,7 @@ msgstr ""
 "applications, incorporating security measures, access restrictions, and "
 "specific settings to reduce the exposure of published services."
 
-#: data/projects.py:568
+#: data/projects.py:694
 msgid ""
 "Administración del sistema Linux mediante terminal y servicios systemd, "
 "incluyendo gestión de procesos, configuración de servicios, supervisión "
@@ -696,125 +854,113 @@ msgstr ""
 "including process management, service configuration, system health "
 "monitoring, maintenance, and infrastructure troubleshooting."
 
-#: data/projects.py:575
+#: data/projects.py:701
 msgid ""
 "Automatización de tareas periódicas mediante cron, incluyendo la "
 "ejecución programada de copias de seguridad y la actualización automática"
 " de la dirección IP dinámica utilizada para mantener la conectividad "
 "remota."
 msgstr ""
-"Automation of recurring tasks using cron, including scheduled backups "
-"and automatic updates to the dynamic IP address used to maintain remote "
+"Automation of recurring tasks using cron, including scheduled backups and"
+" automatic updates to the dynamic IP address used to maintain remote "
 "connectivity."
 
-#: data/projects.py:582
+#: data/projects.py:708
 msgid ""
 "Sistema de copias de seguridad automatizadas mediante tareas programadas,"
 " permitiendo mantener copias periódicas de la información y servicios "
 "relevantes de la infraestructura."
 msgstr ""
-"Automated backup system using scheduled tasks to maintain periodic "
-"copies of important infrastructure data and services."
+"Automated backup system using scheduled tasks to maintain periodic copies"
+" of important infrastructure data and services."
 
-#: data/projects.py:588
+#: data/projects.py:714
 msgid ""
 "Actualización automática de la dirección IP pública mediante una tarea "
 "programada, manteniendo actualizada la información necesaria para el "
 "acceso remoto y los servicios asociados a la conexión doméstica."
 msgstr ""
-"Automatic public IP address updates through a scheduled task, keeping "
-"the information required for remote access and services associated with "
-"the home Internet connection up to date."
+"Automatic public IP address updates through a scheduled task, keeping the"
+" information required for remote access and services associated with the "
+"home Internet connection up to date."
 
-#: data/projects.py:595
-msgid ""
-"Servidor Debian utilizado como infraestructura de producción para "
-"ejecutar aplicaciones web y servicios permanentes. Integra Nginx, "
-"Gunicorn, PostgreSQL, systemd, Docker, Docker Compose, WireGuard, "
-"Fail2ban, cron y herramientas de inteligencia artificial local."
-msgstr ""
-"Debian server used as production infrastructure for running web "
-"applications and persistent services. It integrates Nginx, Gunicorn, "
-"PostgreSQL, systemd, Docker, Docker Compose, WireGuard, Fail2ban, cron, "
-"and local artificial intelligence tools."
-
-#: data/projects.py:621
+#: data/projects.py:739
 msgid "Administración de servidor Linux"
 msgstr "Linux server administration"
 
-#: data/projects.py:622
+#: data/projects.py:740
 msgid "Despliegue de aplicaciones web reales"
 msgstr "Deployment of real-world web applications"
 
-#: data/projects.py:623
+#: data/projects.py:741
 msgid "Configuración de Nginx y Gunicorn"
 msgstr "Nginx and Gunicorn configuration"
 
-#: data/projects.py:624
+#: data/projects.py:742
 msgid "Gestión de servicios mediante systemd"
 msgstr "Service management using systemd"
 
-#: data/projects.py:625
+#: data/projects.py:743
 msgid "Administración de PostgreSQL"
 msgstr "PostgreSQL administration"
 
-#: data/projects.py:626
+#: data/projects.py:744
 msgid "Contenedores Docker y Docker Compose"
 msgstr "Docker and Docker Compose containers"
 
-#: data/projects.py:627
+#: data/projects.py:745
 msgid "Configuración de firewall mediante UFW"
 msgstr "Firewall configuration using UFW"
 
-#: data/projects.py:628
+#: data/projects.py:746
 msgid "Protección automática mediante Fail2ban"
 msgstr "Automated protection using Fail2ban"
 
-#: data/projects.py:629
+#: data/projects.py:747
 msgid "Configuración de seguridad de Nginx"
 msgstr "Nginx security configuration"
 
-#: data/projects.py:630
+#: data/projects.py:748
 msgid "Control de servicios expuestos a Internet"
 msgstr "Control of services exposed to the Internet"
 
-#: data/projects.py:631
+#: data/projects.py:749
 msgid "Configuración de port forwarding"
 msgstr "Port forwarding configuration"
 
-#: data/projects.py:632
+#: data/projects.py:750
 msgid "Acceso remoto mediante WireGuard"
 msgstr "Remote access using WireGuard"
 
-#: data/projects.py:633
+#: data/projects.py:751
 msgid "Gestión de redes y servicios internos"
 msgstr "Internal network and service management"
 
-#: data/projects.py:634
+#: data/projects.py:752
 msgid "Automatización de tareas mediante cron"
 msgstr "Task automation using cron"
 
-#: data/projects.py:635
+#: data/projects.py:753
 msgid "Copias de seguridad programadas"
 msgstr "Scheduled backups"
 
-#: data/projects.py:636
+#: data/projects.py:754
 msgid "Actualización automática de IP dinámica"
 msgstr "Automatic dynamic IP updates"
 
-#: data/projects.py:637
+#: data/projects.py:755
 msgid "DDNS mediante Cloudflare"
 msgstr "DDNS using Cloudflare"
 
-#: data/projects.py:638
+#: data/projects.py:756
 msgid "Ejecución local de herramientas de inteligencia artificial"
 msgstr "Local execution of artificial intelligence tools"
 
-#: data/projects.py:639
+#: data/projects.py:757
 msgid "Infraestructura utilizada para aplicaciones reales"
 msgstr "Infrastructure used for real-world applications"
 
-#: data/projects.py:643
+#: data/projects.py:761
 msgid ""
 "Las aplicaciones web se ejecutan mediante Gunicorn y son publicadas "
 "mediante Nginx como servidor web y proxy inverso. Los servicios "
@@ -824,8 +970,25 @@ msgid ""
 "seguridad y actualización de la IP dinámica se ejecutan automáticamente "
 "mediante cron."
 msgstr ""
-"Web applications run through Gunicorn and are published through Nginx "
-"as the web server and reverse proxy. Persistent services are managed "
-"using systemd, while applications and tools that require containerization "
-"run through Docker Compose. Recurring maintenance tasks, backups, and "
-"dynamic IP updates are executed automatically using cron."
+"Web applications run through Gunicorn and are published through Nginx as "
+"the web server and reverse proxy. Persistent services are managed using "
+"systemd, while applications and tools that require containerization run "
+"through Docker Compose. Recurring maintenance tasks, backups, and dynamic"
+" IP updates are executed automatically using cron."
+
+#~ msgid ""
+#~ "Servidor Debian utilizado como infraestructura"
+#~ " de producción para ejecutar aplicaciones"
+#~ " web y servicios permanentes. Integra "
+#~ "Nginx, Gunicorn, PostgreSQL, systemd, Docker,"
+#~ " Docker Compose, WireGuard, Fail2ban, cron"
+#~ " y herramientas de inteligencia artificial"
+#~ " local."
+#~ msgstr ""
+#~ "Debian server used as production "
+#~ "infrastructure for running web applications"
+#~ " and persistent services. It integrates "
+#~ "Nginx, Gunicorn, PostgreSQL, systemd, Docker,"
+#~ " Docker Compose, WireGuard, Fail2ban, cron,"
+#~ " and local artificial intelligence tools."
+

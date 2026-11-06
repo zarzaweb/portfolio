@@ -451,6 +451,136 @@ PROJECTS = {
 
     },
 
+
+
+    "localops-ai": {
+
+        "title": "LocalOps AI",
+
+        "category": projects_gettext(
+            "Monitorización de infraestructura · Automatización"
+        ),
+
+        "short_description": projects_gettext(
+            "Plataforma distribuida para recopilar, centralizar y "
+            "visualizar información de infraestructura Linux mediante "
+            "recolectores Python, Django y PostgreSQL."
+        ),
+
+        "description": projects_gettext(
+            "Proyecto de monitorización de infraestructura que permite "
+            "recopilar información de servidores Linux, centralizar "
+            "informes y consultar su evolución desde una plataforma web. "
+            "La arquitectura separa la generación de informes en el "
+            "servidor monitorizado de su recepción, almacenamiento y "
+            "visualización en una plataforma central."
+        ),
+
+        "role": projects_gettext(
+            "Diseño y desarrollo de la arquitectura distribuida, "
+            "recolectores de información, comunicación SSH, integración "
+            "con Django ORM, persistencia en PostgreSQL y desarrollo "
+            "de la interfaz de monitorización."
+        ),
+
+        "architecture": projects_gettext(
+            "Arquitectura distribuida entre dos equipos. El servidor "
+            "Kakaroto ejecuta recolectores Python independientes que "
+            "generan informes JSON. Un collector Python, desplegado "
+            "en el equipo central mediante Docker Compose, recupera "
+            "los informes mediante SSH y los incorpora a PostgreSQL "
+            "utilizando los modelos de Django ORM. La aplicación Django "
+            "consulta y presenta la información mediante su dashboard."
+        ),
+
+        "processing": projects_gettext(
+            "El procesamiento se divide en dos etapas. En Kakaroto, "
+            "los recolectores obtienen información de los registros "
+            "y servicios del sistema y generan informes estructurados "
+            "en JSON. Posteriormente, el collector central recupera "
+            "esos informes mediante SSH y los procesa para incorporarlos "
+            "a la base de datos a través de Django ORM."
+        ),
+
+        "backend": [
+            "Python",
+            "Django",
+            "Django ORM",
+            "Python Collector",
+            "SSH",
+        ],
+
+        "frontend": [
+            "Django Templates",
+            "HTML",
+        ],
+
+        "database": [
+            "PostgreSQL",
+        ],
+
+        "infrastructure": [
+            "Docker",
+            "Docker Compose",
+            "Linux",
+        ],
+
+        "features": [
+            projects_gettext("Recopilación automatizada de información de infraestructura"),
+            projects_gettext("Generación de informes estructurados en JSON"),
+            projects_gettext("Comunicación entre equipos mediante SSH"),
+            projects_gettext("Transferencia centralizada de informes"),
+            projects_gettext("Persistencia de información mediante Django ORM"),
+            projects_gettext("Almacenamiento histórico en PostgreSQL"),
+            projects_gettext("Modelos para la gestión de informes de monitorización"),
+            projects_gettext("Dashboard web para consultar la información"),
+        ],
+
+        "administration": projects_gettext(
+            "Aplicación Django organizada mediante modelos y vistas "
+            "para gestionar los informes recibidos y presentar la "
+            "información almacenada en la plataforma central."
+        ),
+
+        "deployment": projects_gettext(
+            "Entorno central desplegado mediante Docker Compose, "
+            "con una aplicación Django y un collector Python organizados "
+            "como componentes independientes. El servidor monitorizado "
+            "mantiene sus propios recolectores y genera los informes "
+            "que posteriormente se recuperan mediante SSH."
+        ),
+
+        "technologies": [
+            "Python",
+            "Django",
+            "Django ORM",
+            "PostgreSQL",
+            "Docker",
+            "Docker Compose",
+            "SSH",
+            "JSON",
+            "Linux",
+        ],
+
+        "highlights": [
+            projects_gettext("Arquitectura distribuida entre dos equipos"),
+            projects_gettext("Separación entre recopilación y procesamiento central"),
+            projects_gettext("Comunicación segura mediante SSH"),
+            projects_gettext("Procesamiento de informes JSON"),
+            projects_gettext("Persistencia mediante Django ORM"),
+            projects_gettext("Almacenamiento histórico en PostgreSQL"),
+            projects_gettext("Desarrollo de dashboard de monitorización"),
+            projects_gettext("Despliegue mediante Docker Compose"),
+        ],
+
+        "images": [
+            "screenshots/localops-ai/arquitectura.png",
+        ],
+
+    },
+
+
+
 "servidor-domestico": {
 
     "title": projects_gettext("Servidor doméstico e infraestructura"),
